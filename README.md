@@ -127,9 +127,15 @@ Evaluated on the 20% held-out test set:
 
 | Metric | Value |
 |---|---|
-| RMSE | 0.127 |
-| MAE | 0.087 |
+| RMSE | **0.127** |
+| MAE | **0.087** |
 | R2 Score | 0.105 |
+
+### Key Findings
+
+- Learned embedding layers for high-cardinality categoricals (Genres: 963→50, Studios: 1,386→50) enable generalization across 731K users and 24.9K titles
+- R² of ~0.10 reflects the inherent difficulty of predicting subjective preferences on sparse user-item matrices
+- End-to-end pipeline validated: training → inference → top-10 candidate generation (e.g., Clannad, Ouran High School Host Club)
 
 
 
